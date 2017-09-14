@@ -79,6 +79,11 @@ class URLComputer
                 UrlGeneratorInterface::ABSOLUTE_URL
             );
             if ($lang !== null) {
+
+                if (php_sapi_name() == 'cli') {
+                    $this->routeRefGenerator->setRequest(new Request());
+                }
+
                 $routeRef = $this->routeRefGenerator->generate($location, ['language' => $lang]);
 
                 return $this->router->generate($routeRef, [], UrlGeneratorInterface::ABSOLUTE_URL);
