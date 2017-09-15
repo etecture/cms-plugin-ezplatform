@@ -1,15 +1,15 @@
 {
-    "name": "siteimprove/cms-plugin-ezplatform",
-    "description": "Bridges the gap between eZ Platform and the Siteimprove Intelligence Platform",
+    "name": "etecture/cms-plugin-ezplatform",
+    "description": "[ETE improvements] Bridges the gap between eZ Platform and the Siteimprove Intelligence Platform",
     "keywords": [
         "ezpublish",
         "ezplatform"
     ],
-    "homepage": "https://github.com/Siteimprove/CMS-plugin-eZPlatform",
+    "homepage": "https://github.com/etecture/CMS-plugin-eZPlatform",
     "type": "ezplatform-bundle",
     "authors": [
         {
-            "name": "Siteimprove",
+            "name": "Siteimprove, ETE improvements",
             "email": "support@siteimprove.com"
         }
     ],
