@@ -3,6 +3,7 @@
 namespace Siteimprove\Bundle\SiteimproveBundle\Core;
 
 use eZ\Publish\Core\MVC\Symfony\Routing\Generator\RouteReferenceGeneratorInterface;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use eZ\Publish\API\Repository\Repository;
 
