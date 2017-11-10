@@ -32,8 +32,8 @@ services:
         # Arguments will be injected here in the configuration
         arguments: []
 
-    siteimprove.onpublish_slot:
-        class: Siteimprove\Bundle\SiteimproveBundle\Slot\SiteimproveUpdateOnPublish
-        arguments: ["@siteimprove.publisher"]
-        tags:
-            - { name: ezpublish.api.slot, signal: ContentService\PublishVersionSignal }
+#    siteimprove.onpublish_slot:
+#        class: Siteimprove\Bundle\SiteimproveBundle\Slot\SiteimproveUpdateOnPublish
+#        arguments: ["@siteimprove.publisher"]
+#        tags:
+#            - { name: ezpublish.api.slot, signal: ContentService\PublishVersionSignal }
