@@ -107,9 +107,11 @@ var SiteImproveUIModule = function () {
     }
 
     function _init() {
-        _addScript("https://cdn.siteimprove.net/cms/overlay.js", function () {
-            _change();
-        });
+        if (window.showSiteimprove) {
+            _addScript("https://cdn.siteimprove.net/cms/overlay.js", function () {
+                _change();
+            });
+        }
     }
 
     function _handleData(dataText) {
