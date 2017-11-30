@@ -49,21 +49,23 @@ var SiteImproveLegacyModule = function () {
     }
 
     function _init() {
-        _addScript("https://cdn.siteimprove.net/cms/overlay.js", function () {
-            var data = _getContainerData();
-            if (data !== false) {
-                if (_debug) {
-                    console.log(data);
+        if (window.showSiteimprove) {
+            _addScript("https://cdn.siteimprove.net/cms/overlay.js", function () {
+                var data = _getContainerData();
+                if (data !== false) {
+                    if (_debug) {
+                        console.log(data);
+                    }
+                    // on time on load
+                    _token = data.token;
+                    if (data.url && data.url !== '') {
+                        _input(data.url);
+                        return;
+                    }
                 }
-                // on time on load
-                _token = data.token;
-                if (data.url && data.url !== '') {
-                    _input(data.url);
-                    return;
-                }
-            }
-            _domain('');
-        });
+                _domain('');
+            });
+        }
 
         $("input[name^=PublishButton]").click(function() {
             var data = _getContainerData();
